@@ -5,6 +5,9 @@
     <title>Welcome to Grails</title>
 
     <asset:link rel="icon" href="favicon.ico" type="image/x-ico" />
+
+    <ckeditor:resources />
+
 </head>
 <body>
     <content tag="nav">
@@ -61,6 +64,13 @@
                 whatever content you may choose. Below is a list of controllers that are currently deployed in
                 this application, click on each to execute its default action:
             </p>
+
+            <p>
+                <ckeditor:editor name="myeditor" height="400px" width="80%">
+                    Example Text
+                </ckeditor:editor>
+            </p>
+
 
             <div id="controllers" role="navigation">
                 <h2>Available Controllers:</h2>
